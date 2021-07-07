@@ -102,6 +102,18 @@ i{
 .h-100{
     height: 100%
 }
+.h-500-pt{
+    height: 500pt;
+}
+.h-430-pt{
+        height: 430pt;
+}
+
+.day-cmh-height{
+    height: 160pt !important;
+    min-height: auto !important;
+}
+
 .border-bottom{
     border-bottom: 1px solid #d5d5d5;
 }
