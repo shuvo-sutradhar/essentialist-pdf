@@ -105,12 +105,19 @@ i{
 .h-500-pt{
     height: 500pt;
 }
-.h-430-pt{
-        height: 430pt;
+
+.h-458-pt {
+    height: calc(485pt - 20px);
+}
+.h-537-pt {
+    height: 537pt;
+}
+.h-auto{
+    height: auto !important;
 }
 
 .day-cmh-height{
-    height: 160pt !important;
+    height: 150pt !important;
     min-height: auto !important;
 }
 
@@ -661,12 +668,26 @@ i{
     top: 0;
 }
 
+
+
 .day-content-lm h2 {
     font-weight: normal;
     font-size: 50rem;
     font-family: 'UniversLTStd-UltraCn-Thin';
     margin: 0;
     margin-top: 140pt;
+}
+
+
+.day-content-lm.lg-h3 > h3 {
+    font-size: 15rem;
+    font-family: 'UniversLTStd-UltraCn-Thin';
+    font-weight: normal;
+    transform: rotate( -90deg);
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    width: 538pt;
+    position: absolute;
 }
 
 .day-content-lb {
