@@ -1322,15 +1322,9 @@ i{
     font-family: 'UniversLTStd';
     letter-spacing: 1.63px;
     color: #303030;
+    font-weight: normal;
 }
 
-.ariport-transfer-details-single p {
-    font-size: 23px;
-    text-transform: uppercase;
-    font-family: 'UniversLTStd';
-    letter-spacing: 1.63px;
-    color: #303030;
-}
 
 
 
@@ -1353,7 +1347,7 @@ i{
     padding: 10px 0 0 20px;
     padding-left: 19px;
 }
-
+.ariport-transfer-details-single p,
 .ariport-transfer-details-single ul li{
 
     font-size: 26px;
