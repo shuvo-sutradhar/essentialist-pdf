@@ -221,26 +221,27 @@ i{
 .content-lm {
     transform: rotate(-90deg);
     font-size: 250pt;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 0.86;
     letter-spacing: 10px;
-    text-align: center;
     color: #303030;
     font-family: 'UniversLTStd-UltraCn-Thin';
-    left: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-left: 6rem;
-    margin-top: 0rem;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: 1310pt;
 }
 
 .content-lb {
+    position: absolute;
     text-align: center;
+    bottom: 0;
+    width: 100%;
 }
+
 .content-lb p {
     font-family: UniversLTStd;
     font-size: 20pt;
@@ -518,12 +519,14 @@ i{
     overflow: hidden;
 }
 
-
-.hotel-rb-r img,
-.hotel-rt {
-    height: 285pt;
-    margin-bottom: 30px;
+.hotel-rb-r {
+    overflow: hidden;
 }
+
+.hotel-rb-r-img {
+    height: 300pt;
+}
+
 .hotel-rb-l img,
 .hotel-rt img{
     object-fit: cover;
@@ -536,7 +539,7 @@ i{
     background: #f4f4f4;
     padding: 30px 20px 20px 20px;
     /* height: 280pt; */
-    height: 275pt;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
