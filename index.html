@@ -4,6 +4,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project Title</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <style type="text/css">
+            .col-w-3 {
+                width: 30%;
+                float: left;
+                height: 100%;
+            }
+            .col-w-9 {
+                width: 70%;
+                float: right;
+            }
+
+            .col-w-3 .content-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                height: 100%;
+                padding-right: 30px;
+            }
+        </style>
     </head>
     <body>
 
@@ -13,13 +34,13 @@
         <div class="sec-padding">
             <div class="content-wrap f-height">
                 <div class="grid h-100">
-                    <div class="col-3 w-300">
+                    <div class="col-3">
                         <div class="content-left">
                             <div class="content-lt">
                                 Centurion
                             </div>
                             <div class="content-lm">
-                                <h3>Honeymoon Trip <br>To santa Barbara</h3>
+                                <h3>Santa Barbara</h3>
                                <!-- ICELAND IN THE FAL -->
                             </div>
                             <div class="content-lb">
@@ -29,6 +50,34 @@
                         </div>
                     </div>
                     <div class="col-9">
+                        <div class="content-right">
+                            <img src="assets/img/banner1.png" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- test -->
+        <div class="sec-padding">
+            <div class="content-wrap f-height">
+                <div class="h-100">
+                    <div class="col-w-3">
+                        <div class="content-left">
+                            <div class="content-lt">
+                                Centurion
+                            </div>
+                            <div class="content-lm">
+                                <h3>Honeymoon Trip <br>To Santa Barbara</h3>
+                               <!-- ICELAND IN THE FAL -->
+                            </div>
+                            <div class="content-lb">
+                                <p>Itinerary For</p>
+                                <h2>Mrs. Haden</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-w-9">
                         <div class="content-right">
                             <img src="assets/img/banner1.png" alt="img" />
                         </div>

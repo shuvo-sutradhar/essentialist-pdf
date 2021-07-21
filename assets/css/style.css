@@ -214,11 +214,6 @@ i{
     height:100%;
 }
 
-.w-300{
-    width: 300px !important;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
 .content-lt {
     font-size: 45pt;
@@ -241,7 +236,7 @@ i{
     top: 0;
 }
 .content-lm h3{
-    font-size: 200pt;
+    font-size: 220pt;
     font-family: 'EssentialistUltraCondensed';
     font-weight: normal;
     transform: rotate( -90deg);
@@ -251,13 +246,7 @@ i{
     font-weight: normal;
     text-align: center;
     line-height: 170pt;
-    padding: 0px 70pt;
-    box-sizing: border-box;
-}
-
-.content-lm h3.text-sm{
-    font-size: 160pt;
-    line-height: 160pt;
+    margin-left: 30pt;
 }
 
 .content-lb {
