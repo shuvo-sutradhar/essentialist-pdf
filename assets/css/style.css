@@ -236,7 +236,7 @@ i{
     top: 0;
 }
 .content-lm h3{
-    font-size: 220pt;
+    font-size: 200pt;
     font-family: 'EssentialistUltraCondensed';
     font-weight: normal;
     transform: rotate( -90deg);
@@ -713,7 +713,7 @@ i{
     /*font-family: 'UniversLTStd-UltraCn-Thin';*/
     font-family: 'EssentialistUltraCondensed';
     margin: 0;
-    margin-top: 120pt;
+    margin-top: 133pt;
     letter-spacing: -55px;
     margin-right: 25pt;
 }
