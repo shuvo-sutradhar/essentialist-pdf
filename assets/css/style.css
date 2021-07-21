@@ -248,6 +248,11 @@ i{
     line-height: 170pt;
 }
 
+.content-lm h3.text-sm{
+    font-size: 160pt;
+    line-height: 144pt;
+}
+
 .content-lb {
     position: absolute;
     text-align: center;
