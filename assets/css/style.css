@@ -214,9 +214,10 @@ i{
     height:100%;
 }
 
-.w-580{
-    width: 580px !important;
+.w-300{
+    width: 300px !important;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .content-lt {
