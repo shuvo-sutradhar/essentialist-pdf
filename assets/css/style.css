@@ -195,8 +195,6 @@ i{
     align-items: center;
     position: relative;
     height: 100%;
-    width: 580px;
-    margin: auto;
 }
 
 
@@ -216,6 +214,10 @@ i{
     height:100%;
 }
 
+.w-580{
+    width: 580px !important;
+    margin: 0 auto;
+}
 
 .content-lt {
     font-size: 45pt;
@@ -236,7 +238,6 @@ i{
     justify-content: center;
     align-items: center;
     top: 0;
-    width: 580px;
 }
 .content-lm h3{
     font-size: 200pt;
