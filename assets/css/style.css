@@ -227,21 +227,25 @@ i{
 }
 
 .content-lm {
-    transform: rotate(-90deg);
-    font-size: 220pt;
-    line-height: .90;
-    color: #303030;
-    font-family: 'EssentialistUltraCondensed';
+    position: absolute;
+    width: 100%;
+    height: calc(1400pt - 125px);
     display: flex;
-    text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-left: 0rem;
-    height: 100%;
     top: 0;
+}
+.content-lm h3{
+    font-size: 220pt;
+    font-family: 'EssentialistUltraCondensed';
+    font-weight: normal;
+    transform: rotate( -90deg);
+    text-transform: uppercase;
+    width: 1270pt;
     position: absolute;
-    width: 1083pt;
+    font-weight: normal;
+    text-align: center;
+    line-height: 200pt;
 }
 
 .content-lb {
@@ -709,9 +713,9 @@ i{
     /*font-family: 'UniversLTStd-UltraCn-Thin';*/
     font-family: 'EssentialistUltraCondensed';
     margin: 0;
-    margin-top: 50pt;
+    margin-top: 100pt;
     letter-spacing: -55px;
-        margin-right: 30pt;
+    margin-right: 25pt;
 }
 
 
@@ -724,6 +728,7 @@ i{
     width: 1270pt;
     position: absolute;
     font-weight: normal;
+    margin-left: 40pt;
 }
 
 .day-content-lb {
