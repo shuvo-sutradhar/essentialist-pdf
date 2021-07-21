@@ -39,6 +39,14 @@
   font-family: "PlantinMTPro-Italic";
   src: url('../webFonts/PlantinMTProItalic/font.woff2') format('woff2'), url('../webFonts/PlantinMTProItalic/font.woff') format('woff');
 }
+/*
+* Essentials new fonts
+*/
+@font-face {
+  font-family: "EssentialistUltraCondensed";
+  src: url('../webFonts/EssentialistUltraCondensed.eot') format('eot'), 
+  url('../webFonts/EssentialistUltraCondensed.woff') format('woff');
+}
 
 body{
 
@@ -220,19 +228,20 @@ i{
 
 .content-lm {
     transform: rotate(-90deg);
-    font-size: 250pt;
-    line-height: 0.86;
-    letter-spacing: 10px;
+    font-size: 220pt;
+    line-height: .90;
     color: #303030;
-    font-family: 'UniversLTStd-UltraCn-Thin';
+    font-family: 'EssentialistUltraCondensed';
     display: flex;
+    text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    margin-left: 3rem;
+    text-align: center;
+    margin-left: 0rem;
     height: 100%;
     top: 0;
     position: absolute;
-    width: 1310pt;
+    width: 1083pt;
 }
 
 .content-lb {
@@ -344,10 +353,13 @@ i{
     grid-template-columns: repeat(9, 1fr);
     grid-column-gap: 30px;
 }
+
+.intro-btm-img1,
 .intro-btm-img:nth-child(1) {
     height: calc(1400pt - 500px - 90px - 90px - 60px);
     position: relative;
 }
+
 .intro-btm-img:nth-child(1):after {
     content: '1';
     color: #fff;
@@ -391,6 +403,14 @@ i{
     top: 15px;
     font-family: 'PlantinMTPro-Regular';
     font-size: 20px;
+}
+
+
+.intro-btm-img.full {
+    grid-column: 1 / span 9 !important;
+}
+.intro-btm-img-full img {
+    object-fit: cover !important;
 }
 
 /*** intro bottom right ***/
@@ -468,8 +488,10 @@ i{
     font-size: 25px;
     font-weight: 700;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 .hotel-content-lt {
+    padding-bottom: 120px;
     border-bottom: 1px solid #D5D5D5;
 }
 
@@ -483,11 +505,16 @@ i{
 
 .hotel-content-lm ul li,
 .hotel-content-lm p {
-    font-size: 38px;
+    font-size: 36px;
     font-family: 'PlantinMTPro-Regular';
-    line-height: 45px;
-    color:#4e4e4e;
+    line-height: 48px;
+    color: #4e4e4e;
 }
+
+.hotel-content-lm ul li{
+    margin-bottom: 10px;
+}
+
 
 .hotel-content-lm p {
     padding-top: 30px;
@@ -501,7 +528,7 @@ i{
     font-size: 25px;
     font-weight: bold;
     margin-top: 30px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 
 .hotel-content-lm ul {
@@ -526,6 +553,9 @@ i{
 .hotel-rb-r-img {
     height: 300pt;
 }
+.hotel-details.full {
+    height: 620pt;
+}
 
 .hotel-rb-l img,
 .hotel-rt img{
@@ -537,9 +567,9 @@ i{
 }
 .hotel-details {
     background: #f4f4f4;
-    padding: 30px 20px 20px 20px;
-    /* height: 280pt; */
-    height: 100%;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    height: 298pt;
     display: flex;
     flex-direction: column;
 }
@@ -555,13 +585,13 @@ i{
 }
 .hotel-details ul {
     margin: 15px 0 0 0;
-    padding: 0 0 0 18px;
+    padding: 0 0 0 30px;
 }
 
 .hotel-details ul li {
-    font-size: 38px;
+    font-size: 36px;
     font-family: 'PlantinMTPro-Regular';
-    line-height: 45px;
+    line-height: 48px;
     color: #4e4e4e;
 }
 
@@ -676,22 +706,23 @@ i{
 .day-content-lm h2 {
     font-weight: normal;
     font-size: 50rem;
-    font-family: 'UniversLTStd-UltraCn-Thin';
+    /*font-family: 'UniversLTStd-UltraCn-Thin';*/
+    font-family: 'EssentialistUltraCondensed';
     margin: 0;
-    margin-top: 140pt;
+    margin-top: 0pt;
+    letter-spacing: -55px;
 }
 
 
 .day-content-lm.lg-h3 > h3 {
-    font-size: 13rem;
-    font-family: 'UniversLTStd-UltraCn-Thin';
+    font-size: 220pt;
+    font-family: 'EssentialistUltraCondensed';
     font-weight: normal;
     transform: rotate( -90deg);
     text-transform: uppercase;
-    letter-spacing: 18px;
-    width: 538pt;
+    width: 1270pt;
     position: absolute;
-    margin-left: 20pt;
+    font-weight: normal;
 }
 
 .day-content-lb {
@@ -731,7 +762,7 @@ i{
 
 .day-content-heading {
     padding-bottom: 1.5rem;
-    padding-top: 1rem;
+    padding-top: 0rem;
     padding-bottom: 1.5rem;
     height: 125px;
     box-sizing: border-box;
@@ -1081,6 +1112,10 @@ i{
     right: -30px;
     top: 0;
 }
+.terms-single.border-right-after:after{
+    
+    height: calc(1400pt - 80pt - 270px);
+}
 
 .confirmation-ex-right-single .day-content-heading {
     padding: 0;
@@ -1098,7 +1133,7 @@ i{
 }
 
 .confirmation-travellers h4 {
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: normal;
     font-family: 'UniversLTStd';
@@ -1115,7 +1150,7 @@ i{
 
 .confirmation-travellers ul li {
     font-family: 'PlantinMTPro-Regular';
-    font-size: 28px;
+    font-size: 30px;
     font-weight: normal;
     line-height: 40px;
     margin-bottom: 0;
@@ -1187,19 +1222,18 @@ i{
 
 .fligh-single-blk h5 {
     font-size: 22px;
-    /*font-size: 23px;*/
     font-weight: normal;
     font-family: 'UniversLTStd';
-   /* letter-spacing: 1.63px;*/
    letter-spacing: 2.5px;
 }
 
 .fligh-single-blk > p {
     font-family: 'PlantinMTPro-Regular';
-    font-size: 26px;
+    font-size: 30px;
     font-weight: normal;
     color: #303030;
     margin-top: 8px;
+    line-height: 40px;
 }
 
 
@@ -1317,7 +1351,7 @@ i{
 }
 
 .ariport-transfer-details-single h4 {
-    font-size: 23px;
+    font-size: 22px;
     text-transform: uppercase;
     font-family: 'UniversLTStd';
     letter-spacing: 1.63px;
@@ -1329,11 +1363,12 @@ i{
 
 
 .ariport-transfer-details-single span {
-    font-size: 26px;
+    font-size: 30px;
     font-family: 'PlantinMTPro-Regular';
     margin-top: 8px;
     display: inline-block;
     color: #303030;
+    line-height: 40px;
 }
 
 .ariport-transfer-details-single {
@@ -1345,15 +1380,14 @@ i{
 .ariport-transfer-details-single ul {
     margin: 0;
     padding: 10px 0 0 20px;
-    padding-left: 19px;
+    padding-left: 25px;
 }
 .ariport-transfer-details-single p,
 .ariport-transfer-details-single ul li{
-
-    font-size: 26px;
+    font-size: 30px;
     font-family: 'PlantinMTPro-Regular';
     color: #303030;
-    line-height: 36px;
+    line-height: 40px;
 }
 
 
