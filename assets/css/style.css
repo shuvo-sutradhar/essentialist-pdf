@@ -713,7 +713,7 @@ i{
     /*font-family: 'UniversLTStd-UltraCn-Thin';*/
     font-family: 'EssentialistUltraCondensed';
     margin: 0;
-    margin-top: 100pt;
+    margin-top: 120pt;
     letter-spacing: -55px;
     margin-right: 25pt;
 }
@@ -728,7 +728,7 @@ i{
     width: 1270pt;
     position: absolute;
     font-weight: normal;
-    margin-left: 33pt;
+    margin-left: 32pt;
 }
 
 .day-content-lb {
