@@ -241,16 +241,18 @@ i{
     font-weight: normal;
     transform: rotate( -90deg);
     text-transform: uppercase;
-    width: 1270pt;
+    width: 1080pt;
     position: absolute;
     font-weight: normal;
     text-align: center;
     line-height: 170pt;
+    padding: 0px 70pt;
+    box-sizing: border-box;
 }
 
 .content-lm h3.text-sm{
-    font-size: 100pt;
-    line-height: 120pt;
+    font-size: 160pt;
+    line-height: 160pt;
 }
 
 .content-lb {
