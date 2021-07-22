@@ -6,24 +6,50 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <style type="text/css">
             .col-w-3 {
-                width: 300px;
+                width: 500px;
                 float: left;
                 height: 100%;
                 overflow: hidden;
             }
             .col-w-9 {
-                width: calc(100% - 300px);
+                width: calc(100% - 500px);
                 float: right;
             }
 
-            .col-w-3 .content-left {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                position: relative;
-                height: 100%;
+            .content-left-d {
                 padding-right: 30px;
+            }
+            .content-left-content{
+                min-height: 1283pt;
+                position: relative;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: small;
+                display: inline-block;
+            }
+
+            .content-left-content h3{
+                font-size: 11rem;
+                color: #000;
+                text-transform: uppercase;
+                letter-spacing: 0px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                font-family: 'EssentialistUltraCondensed';
+                -webkit-transform: rotate(270deg);
+                -moz-transform: rotate(270deg);
+                -ms-transform: rotate(270deg);
+                -o-transform: rotate(270deg);
+                transform: rotate(270deg);
+                -webkit-transform-origin: 0 0;
+                -moz-transform-origin: 0 0;
+                -ms-transform-origin: 0 0;
+                -o-transform-origin: 0 0;
+                transform-origin: 0 0;
+                text-align: center;
+                width: 1000pt;
+                font-weight: normal;
+                line-height: 140pt;
             }
         </style>
     </head>
@@ -59,11 +85,11 @@
             </div>
         </div>        
 
-        <!-- test -->
+        <!-- test 1-->
         <div class="sec-padding">
             <div class="content-wrap f-height">
-                <div class="h-100">
-                    <div class="col-w-3">
+                <div class="grid h-100">
+                    <div class="col-3">
                         <div class="content-left">
                             <div class="content-lt">
                                 Centurion
@@ -78,7 +104,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-w-9">
+                    <div class="col-9">
+                        <div class="content-right">
+                            <img src="assets/img/banner1.png" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- test -->
+        <div class="sec-padding">
+            <div class="content-wrap f-height">
+                <div class="grid h-100">
+                    <div class="col-3">
+                        <div class="content-left-d">
+                            <div class="content-left-content">
+                                <h3>Honeymoon Trip <br>To Santa Barbara</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
                         <div class="content-right">
                             <img src="assets/img/banner1.png" alt="img" />
                         </div>
