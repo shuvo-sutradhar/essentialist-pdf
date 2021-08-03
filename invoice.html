@@ -11,6 +11,10 @@
                 margin:  0 auto;
             }
 
+            .pt-0{
+                padding-top: 0px;
+            }
+
             .i-height {
                 position: relative;
                 height: calc(1400pt - 120px - 38px);
@@ -59,9 +63,327 @@
                 font-family: 'UniversLTStd';
                 padding-top: 25px;
             }
+
+
+            .invoice-heading h2 {
+                font-size: 105px;
+                font-family: 'PlantinMTPro-Regular';
+                line-height: 95px;
+                font-weight: normal;
+            }
+            .invoice-heading p {
+                font-size: 32px;
+                font-family: 'PlantinMTPro-Regular';
+            }
+            .invoice-heading p span {
+                font-size: 28px;
+                font-family: 'UniversLTStd';
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .invoice-sort-info {
+                border-top: 1px solid #D5D5D5;
+                margin-top: 40px;
+                padding-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                padding-bottom: 50px;
+                border-bottom: 1px solid #d5d5d5;
+            }
+
+            .invoice-sinfo-single p {
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd';
+                letter-spacing: 1.6px;
+            }
+            .invoice-sinfo-single span {
+                font-size: 26px;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd';
+                letter-spacing: 1.6px;
+            }
+
+            .invoice-sinfo-single {
+                border-left: 1px solid #d5d5d5;
+                padding-left: 20px;
+            }
+            .invoice-sinfo-single:first-child {
+                padding-left: 0px;
+                border-left: 0px;
+            }
+            .invoice-tbl table {
+                width: 100%;
+                border-spacing: 0;
+            }
+            .invoice-tbl table tbody tr td:first-child,
+            .invoice-tbl table thead tr th:first-child {
+                text-align: left;
+            }
+            .invoice-tbl table thead tr th {
+                text-align: right;
+                border-bottom: 1px solid #d5d5d5;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-family: 'UniversLTStd';
+                color: #aaaaaa;
+                font-weight: 400;
+                padding: 15px 0px;
+            }
+
+            .invoice-tbl table tbody tr td {
+                text-align: right;
+                border-top: 1px solid #d5d5d5;
+                padding-top: 16px;
+                font-size: 30px;
+                font-family: 'PlantinMTPro-Regular';
+                line-height: 30px;
+                padding-bottom: 30px;
+                color: #303030;
+            }
+
+            .invoice-tbl table tbody tr td.tbl-title {
+                font-size: 22px;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd';
+                font-weight: bold;
+                height: 60px;
+                vertical-align: bottom;
+                border: none;
+                padding-bottom: 10px;
+                letter-spacing: 1.6px;
+            }
+
+            tr.tbl-subtotal td {
+                padding: 0px !important;
+                padding-top: 15px !important;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd' !important;
+                font-weight: normal;
+                font-size: 26px !important;
+            }
+            tr.tbl-total td {    
+                border-top: 0px !important;
+            }
+
+            .tbl-total-pay,    
+            tr.tbl-total td {    
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: 'UniversLTStd' !important;
+            }
         </style>
     </head>
     <body>
+
+        <!-- ################### 
+        1    # content-wrap start # 
+        #######################-->
+        <div class="invoice-wrap">
+            <div class="invoice-data">
+                <p>Invoice · <span>Octobre 1, 2020</span></p>
+            </div>
+            <div class="content-wrap i-height">
+                <div class="invoice-heading">
+                    <h2>Paris Weekend <br>Getaway</h2>
+                    <p><span>Trip id: 0j014</span> · $2,030.00</p>
+                </div>
+                <div class="invoice-sort-info">
+                    <div class="invoice-sinfo-single">
+                        <p>Invoice No</p>
+                        <span>2020103421419</span>
+                    </div>
+                    <div class="invoice-sinfo-single">
+                        <p>From</p>
+                        <span>Essentialist</span>
+                    </div>
+                    <div class="invoice-sinfo-single">
+                        <p>Bill to </p>
+                        <span>Sergi Juanos</span>
+                    </div>
+                </div>
+
+                <div class="invoice-tbl">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Units</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Accomodation</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Accomodation</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Restaurants</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr class="tbl-subtotal">
+                                <td>Sub-total</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>                            
+                            <tr class="tbl-total">
+                                <td>Total</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>                            
+                            <tr class="tbl-total-pay">
+                                <td>total to pay</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>  
+        <!-- ################### 
+            # content-wrap end # 
+        ######################-->
+
+
+        <div class="page_break"></div>
+
+        <!-- ################### 
+        1    # content-wrap start # 
+        #######################-->
+        <div class="invoice-wrap">
+            <div class="invoice-data">
+                <p>Invoice · <span>Octobre 1, 2020</span></p>
+            </div>
+            <div class="content-wrap i-height pt-0">
+                <div class="invoice-tbl">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Units</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Accomodation</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Accomodation</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Restaurants</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr class="tbl-subtotal">
+                                <td>Sub-total</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>                            
+                            <tr class="tbl-total">
+                                <td>Total</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>                            
+                            <tr class="tbl-total-pay">
+                                <td>total to pay</td>
+                                <td colspan="3">€2,030.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>  
+        <!-- ################### 
+            # content-wrap end # 
+        ######################-->
+
+        <div class="page_break"></div>
+
 
         <!-- ################### 
         1    # content-wrap start # 
@@ -97,7 +419,7 @@
                     <p>Have a question or need help? Send us an email or give us a call at +1 888-356-8342.</p>
                 </div>
             </div>
-        </div>  
+        </div> 
         <!-- ################### 
             # content-wrap end # 
         ######################-->
