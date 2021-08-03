@@ -1522,3 +1522,179 @@ i{
     margin-top: 20px;
     padding-top: 20px;
 }
+
+
+/*************************
+ * Agenda css 
+ *****************/
+ .ariport-transfer-details i {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'PlantinMTPro-Italic';
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+.ml-25 {
+    margin-left: 25px;
+}
+.pt-25{
+    padding-top: 25px;
+}
+
+
+.ariport-transfer-details-single ul li i {
+    font-size: 28px;
+}
+
+.border-top{
+    border-top: 1px solid #d5d5d5;
+}
+
+
+
+.quote-tbl{
+    margin-bottom: 15px;
+}
+.quote-tbl-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.quote-tbl-left {
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 28px;
+    font-weight: normal;
+    color: #303030;
+}
+
+.quote-tbl-right {
+    font-family: 'UniversLTStd';
+    letter-spacing: 1.63px;
+    font-size: 23px;
+    color: #303030;
+}
+
+.quote-tbl > p,
+.quote-tbl > i {
+    font-family: 'PlantinMTPro-Regular';
+    color: #AAAAAA;
+    font-size: 26px;
+    margin-top: 6px;
+}
+.quote-tbl > i {
+    font-family: 'PlantinMTPro-Italic';
+}
+.quote-single {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.quote-sm .quote-tbl-left {
+    font-size: 25px;
+}
+.quote-sm .quote-tbl-right {
+    font-size: 20px;
+}
+.quote-sm .quote-tbl > p,
+.quote-sm .quote-tbl > i{
+    font-size: 23px;
+}
+
+
+.quote-bar {
+    padding: 10px 15px;
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.quote-bar span {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.quote-bar p {
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: 'UniversLTStd';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #303030;
+}
+
+.q-height {
+    position: relative;
+    height: calc(1400pt - 290pt);
+}
+
+.quote-left {
+    background: #F4F4F4;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.quote-left-heading {
+    font-family: 'PlantinMTPro-Regular';
+    font-weight: normal;
+    font-size: 54px;
+    color: #303030;
+    border-bottom: 1px solid #ddd;
+    padding-top: 25px;
+    padding-bottom: 61px;
+}
+
+.quote-left-wrap table td {
+    font-size: 28px;
+    font-family: 'PlantinMTPro-Regular';
+    color: #303030;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 12px;
+}
+
+.quote-left-wrap table tr td:last-child {
+    text-align: right;
+    font-family: 'UniversLTStd';
+    letter-spacing: 1.63px;
+    font-size: 23px;
+    vertical-align: initial;
+    color: #303030;
+}
+
+.quote-left-wrap table tr:last-child td{
+    border-bottom: 0px solid #d5d5d5;
+
+}
+.quote-left-wrap table tr:last-child td{
+    font-size: 32px;
+}
+
+.quote-note {    
+    position: absolute;
+    bottom: 50px;
+    width: 92%;
+    border-top: 1px solid #d5d5d5;
+    padding-top: 20px;
+}
+
+.quote-note span {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: 'UniversLTStd';
+}
+
+.quote-note p {
+    font-size: 26px;
+    font-family: 'PlantinMTPro-Regular';
+    line-height: 36px;
+    margin-top: 15px;
+}
