@@ -47,6 +47,14 @@
   src: url('../webFonts/EssentialistUltraCondensed.eot') format('eot'), 
   url('../webFonts/EssentialistUltraCondensed.woff') format('woff');
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url('../webFonts/Helvetica-Bold-Font.ttf') format('truetype');
+}
+@font-face {
+  font-family: "radley";
+  src: url('../webFonts/Radley-Regular.ttf') format('truetype');
+}
 
 body{
 
@@ -829,6 +837,9 @@ i{
 }
 .day-content-map img {
     width: 100%;
+}
+.day-content-map.place-img {
+    height: 549pt !important;
 }
 
 .day-content-map-heading h2 {

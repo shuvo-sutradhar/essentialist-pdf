@@ -24,10 +24,11 @@
                 text-transform: uppercase;
                 font-family: 'PlantinMTPro-Regular';
                 letter-spacing: .9px;
-                    margin-bottom: 10px;
+                    margin-bottom: 15pt;
             }
             .invoice-data p span {
                 font-size: 32px;
+                text-transform: capitalize;
             }
             .invoice-desc {
                 font-size: 26px;
@@ -85,7 +86,7 @@
 
             .invoice-sort-info {
                 border-top: 1px solid #D5D5D5;
-                margin-top: 40px;
+                margin-top: 100px;
                 padding-top: 30px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -96,14 +97,14 @@
             .invoice-sinfo-single p {
                 font-size: 24px;
                 text-transform: uppercase;
-                font-family: 'UniversLTStd';
-                letter-spacing: 1.6px;
+                font-family: 'Helvetica', 'Arial', sans-serif;
+                letter-spacing: 1.36px;
+                font-weight: 600;
             }
             .invoice-sinfo-single span {
                 font-size: 26px;
                 text-transform: uppercase;
-                font-family: 'UniversLTStd';
-                letter-spacing: 1.6px;
+                font-family: 'radley';
             }
 
             .invoice-sinfo-single {
@@ -113,6 +114,13 @@
             .invoice-sinfo-single:first-child {
                 padding-left: 0px;
                 border-left: 0px;
+            }
+            .invoice-sinfo-single:first-child span{
+                font-family: 'Helvetica', 'Arial', sans-serif;
+                font-weight: 600;
+                display: block;
+                margin-top: 6px;
+                    letter-spacing: 1.36px;
             }
             .invoice-tbl table {
                 width: 100%;
@@ -131,8 +139,36 @@
                 color: #aaaaaa;
                 font-weight: 400;
                 padding: 15px 0px;
+                letter-spacing: 1.09px;
             }
 
+
+            .invoice-tbl table tbody tr.tbl-subtotal td:first-child {
+                letter-spacing: 1.45px;
+                padding: 0px !important;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd' !important;
+                font-weight: normal;
+                font-size: 26px !important;
+            }
+
+            .invoice-tbl table tbody tr.tbl-subtotal td:last-child,
+            .invoice-tbl table tbody tr.tbl-subtotal td:first-child {
+                padding: 0px;
+                padding-top: 30px;
+                vertical-align: baseline;
+            }
+            .invoice-tbl table tbody tr.tbl-total td {
+                padding-top: 30px;
+                padding-bottom: 60px;
+            }
+            .invoice-tbl table tbody tr.tbl-total-pay td {
+                padding-top: 30px;
+            }
+
+            .invoice-tbl table tbody tr.tbl-total-pay td:last-child {
+                font-size: 36px;
+            }
             .invoice-tbl table tbody tr td {
                 text-align: right;
                 border-top: 1px solid #d5d5d5;
@@ -156,14 +192,7 @@
                 letter-spacing: 1.6px;
             }
 
-            tr.tbl-subtotal td {
-                padding: 0px !important;
-                padding-top: 15px !important;
-                text-transform: uppercase;
-                font-family: 'UniversLTStd' !important;
-                font-weight: normal;
-                font-size: 26px !important;
-            }
+            
             tr.tbl-total td {    
                 border-top: 0px !important;
             }
@@ -171,8 +200,49 @@
             .tbl-total-pay,    
             tr.tbl-total td {    
                 text-transform: uppercase;
-                font-weight: 500;
-                font-family: 'UniversLTStd' !important;
+            }
+
+            .invoice-tbl table tbody tr.tbl-total td:first-child {
+                font-family: 'UniversLTStd';
+                font-weight: 600;
+                letter-spacing: 1.45px;
+            }
+            .invoice-tbl table tbody tr.tbl-total-pay td:first-child {
+                font-family: 'UniversLTStd';
+                font-weight: 600;
+                letter-spacing: 1.45px;
+            }
+
+
+            .bank-transfer h2 {
+                font-size: 30px;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd';
+                letter-spacing: 1.35px;
+                border-top: 1px solid #D5D5D5;
+                padding-top: 25px;
+                margin-top: 40px;
+                margin-bottom: 25px;
+            }
+
+            .bank-transfer-wrap > div {
+                width: 45%;
+                display: inline-block;
+            }
+            .bank-transfer-single > h4 {
+                font-size: 25px;
+                text-transform: uppercase;
+                font-family: 'UniversLTStd';
+                letter-spacing: 1.27px;
+                line-height: 35px;
+                margin-bottom: 6px;
+            }
+
+            .bank-transfer-single p {
+                font-size: 26px;
+                font-family: 'UniversLTStd';
+                letter-spacing: 0;
+                margin-bottom: 6px;
             }
         </style>
     </head>
@@ -267,17 +337,80 @@
                                 <td>2</td>
                                 <td>€630.00</td>
                             </tr>
-                            <tr class="tbl-subtotal">
-                                <td>Sub-total</td>
-                                <td colspan="3">€2,030.00</td>
-                            </tr>                            
-                            <tr class="tbl-total">
-                                <td>Total</td>
-                                <td colspan="3">€2,030.00</td>
-                            </tr>                            
-                            <tr class="tbl-total-pay">
-                                <td>total to pay</td>
-                                <td colspan="3">€2,030.00</td>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Restaurants</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Restaurants</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="tbl-title">Restaurants</td>
+                            </tr>
+                            <tr>
+                                <td>Oct 30: A Taste of ‘The New Paris’</td>
+                                <td>€315.00</td>
+                                <td>2</td>
+                                <td>€630.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: The Historic Gardens of Marie-Antoinette and Joséphine Bonaparte</td>
+                                <td>€200.00</td>
+                                <td>2</td>
+                                <td>€400.00</td>
+                            </tr>
+                            <tr>
+                                <td>Nov 01: Couture Atelier Visit</td>
+                                <td>€1,000.00</td>
+                                <td>1</td>
+                                <td>€1,000.00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -375,6 +508,38 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="bank-transfer">
+                        <h2>Bank Transfer</h2>
+
+                        <div class="bank-transfer-wrap">
+                            <div class="bank-transfer-left">
+                                <div class="bank-transfer-single">
+                                    <h4>ACCOUNT NUMBER</h4>
+                                    <p>XXXXXXXXXX</p>
+                                </div>
+                                <div class="bank-transfer-single">
+                                    <h4>ACH Routing Number</h4>
+                                    <p>XXXXXXXXXX</p>
+                                </div>
+                                <div class="bank-transfer-single">
+                                    <h4>Wire Routing Number</h4>
+                                    <p>XXXXXXXXXX</p>
+                                </div>
+                            </div>
+                            <div class="bank-transfer-right">
+                                <div class="bank-transfer-single">
+                                    <h4>RECIPIENT</h4>
+                                    <p>Essentialist (The Bellhop sl)</p>
+                                </div>
+                                <div class="bank-transfer-single">
+                                    <h4>ADDRESS</h4>
+                                    <p>Transferwise</p>
+                                    <p>19 W 24th Street</p>
+                                    <p>New York 10010 - United States of America</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>  
