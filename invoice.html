@@ -29,6 +29,7 @@
             .invoice-data p span {
                 font-size: 32px;
                 text-transform: capitalize;
+                letter-spacing: 0;
             }
             .invoice-desc {
                 font-size: 26px;
@@ -95,15 +96,17 @@
             }
 
             .invoice-sinfo-single p {
-                font-size: 24px;
+                font-size: 22px;
                 text-transform: uppercase;
-                font-family: 'Helvetica', 'Arial', sans-serif;
-                letter-spacing: 1.36px;
-                font-weight: 600;
+                font-family: 'UniversLTStd';
+                font-weight: bold;
+                vertical-align: bottom;
+                border: none;
+                letter-spacing: 1.6px;
             }
             .invoice-sinfo-single span {
                 font-size: 26px;
-                text-transform: uppercase;
+                text-transform: capitalize;
                 font-family: 'radley';
             }
 
@@ -116,20 +119,21 @@
                 border-left: 0px;
             }
             .invoice-sinfo-single:first-child span{
-                font-family: 'Helvetica', 'Arial', sans-serif;
-                font-weight: 600;
+                font-family: 'PlantinMTPro-Regular';
                 display: block;
                 margin-top: 6px;
-                    letter-spacing: 1.36px;
             }
+
             .invoice-tbl table {
                 width: 100%;
                 border-spacing: 0;
             }
+
             .invoice-tbl table tbody tr td:first-child,
             .invoice-tbl table thead tr th:first-child {
                 text-align: left;
             }
+
             .invoice-tbl table thead tr th {
                 text-align: right;
                 border-bottom: 1px solid #d5d5d5;
@@ -140,8 +144,8 @@
                 font-weight: 400;
                 padding: 15px 0px;
                 letter-spacing: 1.09px;
+                padding-bottom: 30px;
             }
-
 
             .invoice-tbl table tbody tr.tbl-subtotal td:first-child {
                 letter-spacing: 1.45px;
@@ -155,7 +159,7 @@
             .invoice-tbl table tbody tr.tbl-subtotal td:last-child,
             .invoice-tbl table tbody tr.tbl-subtotal td:first-child {
                 padding: 0px;
-                padding-top: 30px;
+                padding-top: 45px;
                 vertical-align: baseline;
             }
             .invoice-tbl table tbody tr.tbl-total td {
@@ -202,25 +206,19 @@
                 text-transform: uppercase;
             }
 
+            .bank-transfer h2,
+            .invoice-tbl table tbody tr.tbl-total-pay td:first-child,
             .invoice-tbl table tbody tr.tbl-total td:first-child {
-                font-family: 'UniversLTStd';
-                font-weight: 600;
-                letter-spacing: 1.45px;
-            }
-            .invoice-tbl table tbody tr.tbl-total-pay td:first-child {
-                font-family: 'UniversLTStd';
-                font-weight: 600;
-                letter-spacing: 1.45px;
-            }
-
-
-            .bank-transfer h2 {
-                font-size: 30px;
+                font-size: 22px;
                 text-transform: uppercase;
                 font-family: 'UniversLTStd';
-                letter-spacing: 1.35px;
+                font-weight: bold;
+                letter-spacing: 1.6px;
+            } 
+
+            .bank-transfer h2 {
                 border-top: 1px solid #D5D5D5;
-                padding-top: 25px;
+                padding-top: 35px;
                 margin-top: 40px;
                 margin-bottom: 25px;
             }
@@ -230,19 +228,26 @@
                 display: inline-block;
             }
             .bank-transfer-single > h4 {
-                font-size: 25px;
+                letter-spacing: 1.45px;
                 text-transform: uppercase;
-                font-family: 'UniversLTStd';
-                letter-spacing: 1.27px;
-                line-height: 35px;
+                font-family: 'UniversLTStd' !important;
+                font-weight: normal;
+                font-size: 26px !important;
                 margin-bottom: 6px;
             }
 
             .bank-transfer-single p {
-                font-size: 26px;
+                font-size: 24px;
                 font-family: 'UniversLTStd';
                 letter-spacing: 0;
                 margin-bottom: 6px;
+            }
+            .bank-transfer-single {
+                margin-bottom: 10px !important;
+            }
+            tr.tr-ex-pb td {
+                padding-bottom: 65px !important;
+                padding-top: 30px !important;
             }
         </style>
     </head>
@@ -488,7 +493,7 @@
                             <tr>
                                 <td colspan="3" class="tbl-title">Restaurants</td>
                             </tr>
-                            <tr>
+                            <tr class="tr-ex-pb">
                                 <td>Oct 30: A Taste of ‘The New Paris’</td>
                                 <td>€315.00</td>
                                 <td>2</td>

@@ -243,7 +243,8 @@ i{
     top: 0;
 }
 .content-lm h3{
-    font-size: 220pt;
+    font-size: 190pt;
+    /*font-size: 220pt;*/
     font-family: 'EssentialistUltraCondensed';
     font-weight: normal;
     transform: rotate( -90deg);
@@ -279,7 +280,7 @@ i{
 
 .content-lb h2 {
     font-family: "PlantinMTPro-Italic";
-    font-size: 46pt;
+    font-size: 36pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: italic;
@@ -815,8 +816,7 @@ i{
     padding: 30px 0px;
     border-top: 1px solid #d5d5d5;
     border-bottom: 1px solid #d5d5d5;
-
-    height: 500px;
+    height: 500px !important;
 }
 
 .day-content-map img{
@@ -824,7 +824,7 @@ i{
     object-fit: cover;
 }
 .day-content-map-heading {
-    min-height: 250px;
+    min-height: 200px;
     border-bottom: 1px solid #d5d5d5;
     margin-bottom: 30px;
 }
@@ -839,7 +839,7 @@ i{
     width: 100%;
 }
 .day-content-map.place-img {
-    height: 549pt !important;
+    height: 375pt !important;
 }
 
 .day-content-map-heading h2 {
@@ -1172,6 +1172,7 @@ i{
     line-height: 40px;
     margin-bottom: 0;
     color: #303030;
+    word-break: break-all;
 }
 
 .ariport-transfer-details > h2,
@@ -1707,4 +1708,10 @@ i{
     font-family: 'PlantinMTPro-Regular';
     line-height: 36px;
     margin-top: 15px;
+}
+
+.paymentIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
 }
