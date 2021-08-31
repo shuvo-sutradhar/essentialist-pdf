@@ -1539,7 +1539,8 @@ i{
  * Agenda css 
  *****************/
  .ariport-transfer-details i {
-    font-size: 22px;
+    /*font-size: 22px;*/
+    font-size: 32px;
     margin-bottom: 20px;
     font-family: 'PlantinMTPro-Italic';
     margin-bottom: 25px;
@@ -1579,6 +1580,7 @@ i{
     font-size: 28px;
     font-weight: normal;
     color: #303030;
+    line-height: 36px;
 }
 
 .quote-tbl-right {
@@ -1698,9 +1700,10 @@ i{
 }
 
 .quote-note span {
-    font-size: 23px;
+    font-size: 22px;
     text-transform: uppercase;
     font-family: 'UniversLTStd';
+    letter-spacing: 2.5px;
 }
 
 .quote-note p {
