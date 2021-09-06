@@ -5,25 +5,46 @@
         <title>Project Title</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
         <style type="text/css">
+
+            .intro-wrapper {
+                height: calc(1400pt - 80px);
+                margin: 30px;
+                padding: 30px;
+                border: 1px solid #d5d5d5;
+                overflow: hidden;
+            }
+            .intro-left {
+                width: 400pt;
+                float: left;
+                position: relative;
+                height: 100%;
+
+            }
+            .intro-left:after {
+                width: 1px;
+                position: absolute;
+                content: "";
+                height: 100%;
+                right: -20px;
+                background: #d5d5d5;
+                z-index: 99;
+                top: 0;
+            }
+            .intro-right {
+                width: calc(100% - 440pt);
+                float: right;
+                height: 100%;
+            }
+            .intro-right img {
+                width: 100%;
+                height: 100%;
+            }
+            
             .content-lm-mdl {
                 position: absolute;
                 height: 1310pt;
                 display: flex;
                 justify-content: center;
-            }
-            .content-wrap.f-height{
-                display: flex;
-            }
-            .col-w-3 {
-                width: 400px;
-                position: relative;
-            }
-            .col-w-9 {
-                width: calc(100% - 420px);
-                margin-left: 30px;
-            }
-            .w-420{
-                width: 420px !important;
             }
             .content-lm-mdl h3 {
                 writing-mode: vertical-rl;
@@ -36,7 +57,7 @@
                 line-height: 155pt;
                 text-transform: uppercase;
             }
-            
+
         </style>
     </head>
     <body>
@@ -44,30 +65,25 @@
         <!-- ################### 
         1    # content-wrap start # 
         #######################-->
-        <div class="sec-padding">
-            <div class="content-wrap f-height">
-                <div class="col-w-3">
-                    <div class="content-left">
-                        <div class="content-lt">
-                            Centurion
-                        </div>
-                        <div class="content-lm-mdl">
-                            <h3>Honeymoon Trip <br> To Santa Barbara</h3>
-                           <!-- Honeymoon Trip <br> To Santa Barbara -->
-                        </div>
-                        <div class="content-lb">
-                            <p>Itinerary For</p>
-                            <h2>Mrs. Haden</h2>
-                        </div>
+        <div class="intro-wrapper">
+            <div class="intro-left">
+                <div class="content-left">
+                    <div class="content-lt">
+                        Centurion
                     </div>
-                </div>
-                <div class="col-w-9">
-                    <div class="content-right">
-                        <img src="assets/img/banner1.png" alt="img" />
+                    <div class="content-lm-mdl">
+                        <h3>Honeymoon Trip <br> To Santa Barbara</h3>
+                    </div>
+                    <div class="content-lb">
+                        <p>Itinerary For</p>
+                        <h2>Mrs. Jessica Paindiris</h2>
                     </div>
                 </div>
             </div>
-        </div>        
+            <div class="intro-right">
+                <img src="assets/img/banner1.png" alt="img" />
+            </div>
+        </div>
         <!-- ################### 
             # content-wrap end # 
         ######################-->
